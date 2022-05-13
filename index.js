@@ -31,18 +31,19 @@ window.onload = () => {
 // }
 
 const generateRandomDomain = () => {
-  let randomDomain = [];
-  // randomDomain = randomDomain.toString;
-  // randomDomain = randomDomain.split(" ");
+  let randomDomain = "";
 
   for (let i = 0; i < pronoun.length; i++) {
     for (let j = 0; j < adj.length; j++) {
       for (let k = 0; k < noun.length; k++) {
         for (let l = 0; l < tld.length; l++) {
-          randomDomain.push(pronoun[i] + adj[j] + noun[k] + tld[l]);
+          randomDomain =
+            randomDomain + pronoun[i] + adj[j] + noun[k] + tld[l] + "</br>";
         }
       }
     }
   }
   return randomDomain;
 };
+
+
